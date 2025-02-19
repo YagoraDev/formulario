@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário </title>
+</head>
+<body>
+    <h1>Formulário em HTML!</h1>
+
+    <!-- Criar o formulário-->
+    <!-- Action => Para onde os dados vão -->
+    <!-- Como o formulário vai ser enviado-->
+    <form action="" method="post">
+
+        <!-- Inputs = Entradas-->
+        <label for="nome">Nome:</label>
+        <input type="text" required name="nome" placeholder="Digite o seu nome"/>
+
+
+        <label for="nome">Email:</label>
+        <input type="email" required name="email" placeholder="Digite o seu Email"/>
+
+        <label for="nome">Senha:</label>
+        <input type="password" required name="senha" placeholder="Digite a sua senha"/>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+
+        <!-- Formas de seleção-->
+        <!-- 
+            Selecionar algo,
+            quero exibir todas as posibilidades,
+            mas eu só pode escolher 1
+        -->
+
+        <h2>Preferências</h2>
+        <p>Gênero:</p>
+
+        <input type="radio" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="genero" value="Masculino">
+        <label for="feminino">Feminino</label>
+
+        <input type="radio" name="genero" value="Masculino">
+        <label for="outro">Outro</label>
+
+        <!-- Mas pode selecionar 1 ou +-->
+         <p>Preferências:</p>
+
+         <input type="checkbox" name="interesses" value="Música">
+         <label for="musica">Música</label>
+
+         <input type="checkbox" name="interesses" value="Esporte">
+         <label for="esporte">Esporte</label>
+
+         <input type="checkbox" name="interesses" value="Viagem">
+         <label for="viagem">Viagem</label>
+
+         <!-- Quero esconder as opções, limitar 1-->
+        
+         <label for="cidade">Cidade:</label>
+         <select name="cidade">
+            <option value="">Selecione a sua cidade</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Florianópolis">Florianópolis</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+         </select>
+
+         <!-- Tipos HTML5-->
+          <label for="data_nascimento">Data de Nascimento:</label>
+          <input type="date" name="data_nascimento" />
+
+          <label for="hora_contato">Selecione o Horário:</label>
+          <input type="time" name="hora_contato" />
+
+          <label for="cor">Selecione a cor:</label>
+          <input type="color" name="cor">
+
+          <!-- Envio de arquivos -->
+          <div>
+            <input type="file" name="arquivo" accept=".pdf, .png">
+          </div>
+
+          <div>
+            <input type="file" name="arquivo" accept=".pdf, .png" multiple>
+          </div>
+        <!-- Botão de ação = submit-->
+        <!-- <input type="subimit value="Enviar" /> -->
+         <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar Form</button>
+         </div>
+
+    </form>
+
+
+
+
+</body>
+</html>
